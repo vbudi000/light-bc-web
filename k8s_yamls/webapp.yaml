@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: "us.icr.io/<namespace>/webapp:latest"
+          image: __IMAGE__
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:

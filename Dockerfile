@@ -16,7 +16,7 @@ RUN mkdir -p $APP_HOME/node_modules $APP_HOME/public/resources/bower_components
 WORKDIR $APP_HOME
 
 # Copy package.json, bower.json, and .bowerrc files
-COPY package*.json bower.json .bowerrc ./
+COPY StoreWebApp/package*.json StoreWebApp/bower.json StoreWebApp/.bowerrc ./
 
 # Create user, chown, and chmod
 RUN adduser -u 2000 -G root -D blue \
@@ -28,7 +28,7 @@ RUN npm install
 USER 0
 
 COPY startup.sh startup.sh
-COPY . ./
+COPY StoreWebApp ./
 
 # Chown
 RUN chown -R 2000:0 $APP_HOME

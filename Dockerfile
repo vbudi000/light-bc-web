@@ -25,9 +25,10 @@ RUN adduser -u 2000 -G root -D blue \
 # Install Dependencies
 USER 2000
 RUN npm install
+USER 0
 
 COPY startup.sh startup.sh
-COPY StoreWebApp .
+# COPY StoreWebApp ./
 
 # Chown
 RUN chown -R 2000:0 $APP_HOME

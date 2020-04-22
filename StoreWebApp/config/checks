@@ -13,4 +13,4 @@
 
 # Check HTTP access, and for text content
 # http://localhost:8000	BlueCompute Store!
-# http://localhost:8000/inventory/	Dayton Meat Chopper
+# http://localhost:8000/catalog/	Dayton Meat Chopper

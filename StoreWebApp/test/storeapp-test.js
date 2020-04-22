@@ -37,10 +37,10 @@ describe('BlueCompute Web App Test Suites', function() {
     });
 
     // test the inventory page rendering
-    describe('when request the path /inventory', function() {
+    describe('when request the path /catalog', function() {
         it('should return valid HTML page with a list of items', function(done) {
 
-            var endPoint = serviceBaseUrl + "/inventory";
+            var endPoint = serviceBaseUrl + "/catalog";
 
             request(endPoint, function(error, response, body) {
 

@@ -57,12 +57,12 @@ app.service('BlueAPIService',['$http', 'CONFIG', '$base64', function($http, CONF
 	}
 		return  {
 			getCatalog : function(successCallback, errorCallback) {
-				var restUrl = 'inventory/';
+				var restUrl = 'catalog/';
 				var requestType = 'GET';
 				invokeService(restUrl, requestType, null, successCallback, errorCallback);
 			},
 			getItemById : function(itemId, successCallback, errorCallback) {
-				var restUrl = 'inventory/' + itemId;
+				var restUrl = 'catalog/' + itemId;
 				var requestType = 'GET';
 				invokeService(restUrl, requestType, null, successCallback, errorCallback);
 			},

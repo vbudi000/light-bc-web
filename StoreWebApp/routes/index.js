@@ -5,7 +5,7 @@ var path = require('path');
 /* GET home page. */
 /*
 router.get('/', function (req, res) {
-  res.render('index', {title: 'IBM Cloud Architecture'});
+  res.render('index', {title: 'U.S. Department of Veteran Affairs'});
 });*/
 
 router.get('/', function(req, res) {

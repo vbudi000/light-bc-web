@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineRun
 metadata:
-  name: bluecompute-web-pr-002
+  name: bluecompute-web-pr-003
 spec:
   pipelineRef:
     name: bluecompute-build-and-deploy-pipeline-web

@@ -30,8 +30,8 @@ spec:
         sed -i -e 's|__IMAGE__|'"$NEW_IMAGE_ID"'|g' /workspace/git-source-web/$(inputs.params.pathToYamlFile)/webapp.yaml
         sed -i -e 's|__IMAGE__|'"$NEW_IMAGE_ID"'|g' /workspace/git-source-web/$(inputs.params.pathToDeployablesFile)/deployable.yaml
   - name: deploy-image
-    image: lachlanevenson/k8s-kubectl
-    command: ["kubectl"]
+    image: ibmgaragetsa/cpeir-runtime:v0.001
+    command: ["oc"]
     args:
         - "apply"
         - "-f"

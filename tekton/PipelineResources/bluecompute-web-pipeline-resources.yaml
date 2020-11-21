@@ -16,7 +16,7 @@ items:
   spec:
     params:
     - name: revision
-      value: master
+      value: va
     - name: url
       value: https://github.com/vbudi000/light-bc-web
     type: git
